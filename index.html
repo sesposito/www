@@ -1,94 +1,43 @@
-<html> 
-	<head> 
-		<title>My first Three.js app</title> 
-		<style>canvas { width: 100%; height: 100% }</style> 
-	</head> 
-	<body> 
-		<script src="js/three.min.js"></script> 
-		<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simon Esposito | Personal Page</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 
-			var scene = new THREE.Scene(); 
-			var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 3000);
-			var mouseX = 0, mouseY = 0;
-			var renderer = new THREE.WebGLRenderer({antialias: true}); 
-			renderer.setSize(window.innerWidth, window.innerHeight); 
-			document.body.appendChild(renderer.domElement); 
-			var windowHalfX = window.innerWidth / 2;
-			var windowHalfY = window.innerHeight / 2;
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body>
+  <div id="header" class="row">
+    <div class="text-center">
+      <img src="img/myself.jpg" style="width:15%;" alt="Simon Esposito Picture" class="img-circle">
+    </div>
+  </div>
+  
+  <div id="quote" class="row">
+    <div class="text-center">
+      <h2>"I like to break stuff"</h2>
+    </div>
+  </div>
 
+  <div id="social" class="row">
+    <div class="text-center">
+      <img src="img/linkedin.png" alt="linkedin">
+      <img src="img/lastfm.png" alt="lastfm">
+      <img src="img/github.png" alt="github">
+      <img src="img/twitter.png" alt="twitter">
+    </div>
+  </div>
 
-
-			// var geometry = new THREE.BoxGeometry(1,1,1);
-			// var material = new THREE.MeshBasicMaterial({color: 0x00ff00});
-			// var cube = new THREE.Mesh(geometry, material);
-			// cube.position(3,3,3);
-			// scene.add(cube);
-
-			var geometry = new THREE.SphereGeometry( 1, 32, 32 );
-			var material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
-			var sphere = new THREE.Mesh( geometry, material );
-			sphere.position.x = 0;
-			sphere.position.y = 0;
-			sphere.position.z = 0;
-			//scene.add( sphere );
-
-			//Top wall
-			plane1 = new THREE.Mesh( new THREE.PlaneGeometry( 500, 3000, 5, 15 ), new THREE.MeshBasicMaterial( { color: 0xcccccc, wireframe : true } ) );
-			plane1.rotation.x = Math.PI/2;
-			//plane1.position.x = 0;
-			plane1.position.y = 250;
-			plane1.position.z = 50-1500;
-			scene.add( plane1 );
-
-			//Bottom wall
-			plane2 = new THREE.Mesh( new THREE.PlaneGeometry( 500, 3000, 5, 15 ), new THREE.MeshBasicMaterial( { color: 0xcccccc, wireframe : true } ) );
-			plane2.rotation.x = Math.PI/2;
-			plane2.position.y = -250;
-			plane2.position.z = 50-1500;
-			scene.add( plane2 );
-
-			//Left
-			plane3 = new THREE.Mesh( new THREE.PlaneGeometry( 3000, 500, 15, 5 ), new THREE.MeshBasicMaterial( { color: 0xcccccc, wireframe
-				: true } ) );
-			plane3.rotation.y = Math.PI/2;
-			plane3.position.x = -250;
-			plane3.position.z = 50-1500;
-			scene.add( plane3 ); 
-
-			//Right
-			plane3 = new THREE.Mesh( new THREE.PlaneGeometry( 3000, 500, 15, 5 ), new THREE.MeshBasicMaterial( { color: 0xcccccc, wireframe
-				: true } ) );
-			plane3.rotation.y = -Math.PI/2;
-			plane3.position.x = 250;
-			plane3.position.z = 50-1500;
-			scene.add( plane3 ); 
-
-			camera.position.z = 100; 
-
-			document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-
-			var render = function () 
-			{ 
-
-				requestAnimationFrame(render);
-				camera.position.x += (( mouseX - camera.position.x ) * 0.009);
-				camera.position.y += (( - mouseY - camera.position.y ) * 0.009);
-
-
-				//sphere.position.x += 0.2;
-				//sphere.position.y += 0.2;
-				renderer.render(scene, camera); 
-			};
-
-			function onDocumentMouseMove( event ) {
-
-				mouseX = event.clientX - windowHalfX;
-				mouseY = event.clientY - windowHalfY;
-
-			}
-
-			render();
-
-		</script> 
-	</body> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
