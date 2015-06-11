@@ -11,11 +11,19 @@ var lastfm = new lastFmNode({
 
 var trackStream = lastfm.stream('s_mn');
 
-var nowPlaying = {'string': ' '};
+var nowPlaying = {};
 
 trackStream.on('nowPlaying', function(track){
-	console.log(track);
-	nowPlaying.string = 'NowPlaying: ' + track.artist['#text'] +'->'+ track.name;
+	//console.log(track);
+	nowPlaying['artist'] = track.artist['#text'];
+	nowPlaying['track'] = track.name;
+	nowPlaying['album'] = track.album['#text'];
+
+	track.image.forEach(function(url){
+		if(url.size === 'large'){
+			nowPlaying['imageUrl'] = url['#text'];
+		}
+	});
 });
 
 trackStream.start();

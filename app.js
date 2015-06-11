@@ -60,12 +60,9 @@ var appServer = server.listen(3000, function(){
 
     var host = server.address().address;
     var port = server.address().port;
-    
-    console.log('App listening at http//localhost:%s', port);
+
 });
 
 io.on('connection', function(socket){
   console.log('a user connected');
 });
-
-
