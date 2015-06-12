@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="My personal webpage">
+  <meta name="author" content="Simon Esposito">
+  <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+  <title>Simon Esposito | Developer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="stylesheets/styles.css" rel="stylesheet">
+  <link href="stylesheets/custom.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#link-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Simon Esposito | Developer</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="link-collapse">
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul> -->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- <div class="cover">
+      <div class="row">
+        <div class="col-sm-4 text-left">
+          <img class="img-circle cover-img" src="images/myself.jpg" alt="Simon Esposito Picture">
+        </div>
+        <div class="col-sm-8 text-left">
+          <p class="lead short-bio">I have a MSc in communication networks engineering and am a back-end developer with linux skills and an interest in security.<br></p>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="row">
+
+      <!--About me panel-->
+      <div class="col-sm-6 col-md-8">
+        <div class="panel panel-default">
+          <div class="panel-heading text-left"><h4>About Me</h4></div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <img class="img-circle cover-img" src="images/myself.jpg" alt="Simon Esposito Picture">
+              </div>
+              <div class="col-sm-12 col-md-8">
+                <p class="text-left">My name is Simon and I'm a back-end developer (mostly) with linux skills and an interest in security. I recently finished my MSc in Telecommunications and Informatics Engineering <a href="http://tecnico.ulisboa.pt/">@IST</a> with a major in Network and services management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading text-left"><h4>What I'm Listening to</h4></div>
+          <div class="panel-body" style="background-color: black;">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 text-left">
+
+                <% if(Object.keys(musicInfo).length === 0){ %>
+
+                  <h5>No Track Info from Last.fm</h5>
+
+                <% }else{ %>
+
+                  <h5><%= 'Track: '+ musicInfo.track %></h5>
+                  <h5><%= 'Artist: '+ musicInfo.artist %></h5>
+                  <div class="text-center">
+                    <img src="<%= musicInfo.imageUrl %>" alt="album cover"></img>
+                  </div>
+
+                <% } %>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--More info panel-->
+      <div class="col-sm-6 col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading text-left"><h4>More info</h4></div>
+          <div class="panel-body more-info-body" style="background-color: black;">
+            <div class="row">
+              <div class="col-xs-3 col-md-3 text-center">
+                <a href="https://github.com/sesposito"><img class="social-img" src="images/github.png" alt="github"></a>
+              </div>
+              <div class="col-xs-3 col-md-3 text-center">
+                <a href="https://pt.linkedin.com/in/espositosimon"><img class="social-img" src="images/linkedin.png" alt="linkedin"></a>
+              </div>
+              <div class="col-xs-3 col-md-3 text-center">
+                <a href="http://www.last.fm/user/s_mn"><img class="social-img" src="images/lastfm.png" alt="lastfm"></a>
+              </div>
+              <div class="col-xs-3 col-md-3 text-center">
+                <a href="https://twitter.com/s_m_n"><img class="social-img" src="images/twitter.png" alt="twitter"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading text-left"><h4>What I'm Listening to</h4></div>
+          <div class="panel-body" style="background-color: black;">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 text-left">
+
+                <% if(Object.keys(musicInfo).length === 0){ %>
+
+                  <h5>No Track Info from Last.fm</h5>
+
+                <% }else{ %>
+
+                  <h5><%= 'Track: '+ musicInfo.track %></h5>
+                  <h5><%= 'Artist: '+ musicInfo.artist %></h5>
+                  <div class="text-center">
+                    <img src="<%= musicInfo.imageUrl %>" alt="album cover"></img>
+                  </div>
+
+                <% } %>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div> <!--/site-wrapper-->
+
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+  <!-- socket.io -->
+  <script src="javascripts/socket.io.js"></script>
+  <script>
+    var socket = io();
+  </script>
+</body>
+</html>
