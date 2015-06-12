@@ -11,17 +11,18 @@ var lastfm = new lastFmNode({
 
 var trackStream = lastfm.stream('s_mn');
 
-var nowPlaying = {};
+var musicInfo = {};
 
 trackStream.on('nowPlaying', function(track){
 	//console.log(track);
-	nowPlaying['artist'] = track.artist['#text'];
-	nowPlaying['track'] = track.name;
-	nowPlaying['album'] = track.album['#text'];
+	musicInfo['artist'] = track.artist['#text'];
+	musicInfo['track'] = track.name;
+	musicInfo['album'] = track.album['#text'];
+	musicInfo['nowPlaying'] = Boolean(track['@attr'].nowplaying);
 
 	track.image.forEach(function(url){
 		if(url.size === 'large'){
-			nowPlaying['imageUrl'] = url['#text'];
+			musicInfo['imageUrl'] = url['#text'];
 		}
 	});
 });
@@ -29,7 +30,7 @@ trackStream.on('nowPlaying', function(track){
 trackStream.start();
 
 router.get('/', function(req, res) {
-  res.render('index', nowPlaying);
+	res.render('index', {musicInfo: musicInfo});
 });
 
 

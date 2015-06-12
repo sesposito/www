@@ -5,10 +5,11 @@
 /* Links */
 a,
 a:focus {
-  color: #fff;
+  color: white;
+  text-decoration: underline;
 }
 a:hover {
-  color: purple;
+  color: blue;
 }
 /*
  * Base structure
@@ -20,22 +21,21 @@ body {
   text-align: center;
   height: 100%;
   background-color: #002934;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /*
  * Navbar
  */
 .navbar {
-  margin-bottom: 0;
-  border-bottom-style: solid;
-  border-bottom-color: white;
-  border-bottom-width: medium;
+  border-bottom: medium solid white;
   margin-bottom: 10px;
 }
 
 .navbar-brand {
   font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-left: 5px;
 }
 
 .navbar-toggle {
@@ -82,17 +82,15 @@ body {
   width: 100px;
 }
 
-.social-img {
-  margin-top: 32.5px;
-}
-
 .cover p {
   margin: 8%;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-
+.social-img {
+  margin: 5px;
+}
 /*
  * Footer
  */
