@@ -33,41 +33,6 @@
 
   <div class="site-wrapper">
 
-    <!-- Navbar -->
-    <!-- <nav class="navbar"> -->
-      <!-- <div class="container-fluid"> -->
-        <!-- Brand and toggle get grouped for better mobile display -->
-       <!--  <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#link-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Simon Esposito | Developer</a>
-        </div>
- -->
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <!-- <div class="collapse navbar-collapse" id="link-collapse"> -->
-
-          <!-- <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Projects</a></li>
-          </ul> -->
-        <!-- </div>/.navbar-collapse -->
-      <!-- </div>/.container-fluid -->
-    <!-- </nav> -->
-
-    <!-- <div class="cover">
-      <div class="row">
-        <div class="col-sm-4 text-left">
-          <img class="img-circle cover-img" src="images/myself.jpg" alt="Simon Esposito Picture">
-        </div>
-        <div class="col-sm-8 text-left">
-          <p class="lead short-bio">I have a MSc in communication networks engineering and am a back-end developer with linux skills and an interest in security.<br></p>
-        </div>
-      </div>
-    </div> -->
 
     <div class="row">
 
@@ -93,57 +58,12 @@
           </div>
           
         </div>
-
-        <div class="mdl-card">
-
-          <div class="mdl-card__media mdl-color-text--grey-50">
-            <h3>Experience</h3>
-          </div>
-          <div class="mdl-card__supporting-text mdl-color-text--black">
-            <div class="row" style="padding-top: 20px">
-
-                <div class="col-sm-10">
-
-                <p style="font-size:120%;">2013 - Present | EU <a href="https://www.eid-stork2.eu/">STORK2.0</a> Portuguese Academic Pilot @IST</p> 
-                </div>
-
-                <div class="col-sm-2" style="padding-left: 0;">
-                  <a href="https://github.com/STORK2/TADS"><i class="fa fa-github-square fa-2x"></i></a>
-                </div>
-            </div>
-          </div>
-          
-        </div>
-
-         <div class="mdl-card">
-
-          <div class="mdl-card__media mdl-color-text--grey-50">
-            <h3>Projects</h3>
-          </div>
-          <div class="mdl-card__supporting-text mdl-color-text--black">
-            <div class="row" style="padding-top: 20px">
-
-                <div class="col-sm-10">
-
-                <p style="font-size:120%;">Check out my <a href="https://github.com/sesposito">GitHub</a></p> 
-                </div>
-
-                <div class="col-sm-2" style="padding-left: 0;">
-                  <a href="https://github.com/sesposito"><i class="fa fa-github-square fa-2x"></i></a>
-                </div>
-            </div>
-          </div>
-          
-        </div>
-
       </div>
-
-
 
       <!--Reach me panel-->
       <div class="col-sm-6 col-md-4">
         <div class="mdl-card">
-          <div class="mdl-card__media mdl-color-text--grey-50" style="background-color: orange;">
+        <div class="mdl-card__media mdl-color-text--grey-50" style="background-color: grey;">
             <h3>Reach Me</h3>
           </div>
           <div class="mdl-card__supporting-text mdl-color-text--black">
@@ -156,54 +76,69 @@
             </div>
           </div>
         </div>
+      </div>
 
 
-        <div class="mdl-card">
+    </div>
 
-          <div class="mdl-card__media mdl-color-text--grey-50" style="background-color: green;">
+    <div class="mdl-card">
 
-          
+      <div class="mdl-card__media mdl-color-text--grey-50">
+        <h3>Experience</h3>
+      </div>
+      <div class="mdl-card__supporting-text mdl-color-text--black">
+        <div class="row" style="padding-top: 20px">
 
-            <h3>What I'm <span class="glyphicon glyphicon-headphones"></span> to</h3>
+          <div class="col-sm-10">
 
+            <p style="font-size:120%;">2013 - Present | EU <a href="https://www.eid-stork2.eu/">STORK2.0</a> Portuguese Academic Pilot @IST</p> 
           </div>
 
-            
-          
-          <div class="mdl-card__supporting-text mdl-color-text--black">
-            <div class="row text-left" style="padding-left: 10px;">
+          <div class="col-sm-2" style="padding-left: 0;">
+            <a href="https://github.com/STORK2/TADS"><i class="fa fa-github-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
 
-             <% if(Object.keys(musicInfo).length === 0){ %>
+    </div>
 
-             <h5>No Track Info from Last.fm</h5>
+    <div class="mdl-card">
 
-             <% }else{ %>
+      <div class="mdl-card__media mdl-color-text--grey-50">
+        <h3>Projects</h3>
+      </div>
+      <div class="mdl-card__supporting-text mdl-color-text--black">
+        <div class="row" style="padding-top: 20px">
 
-             <h5><%= 'Track: '+ musicInfo.track %></h5>
-             <h5><%= 'Artist: '+ musicInfo.artist %></h5>
-             <div class="text-center">
-               <img src="<%= musicInfo.imageUrl %>" alt="album cover">
-             </div>
+          <div class="col-sm-10">
 
-             <% } %>
+            <p style="font-size:120%;">Check out my <a href="https://github.com/sesposito">GitHub</a></p> 
+          </div>
 
-           </div>
-         </div>
+          <div class="col-sm-2" style="padding-left: 0;">
+            <a href="https://github.com/sesposito"><i class="fa fa-github-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
 
+    </div>
 
-       </div>
-     </div>
-   </div>
- </div><!--/site-wrapper-->
+  </div>
 
 
 
- <!-- Bootstrap core JavaScript -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
- <script src="javascripts/bootstrap.min.js"></script>
- <!-- socket.io -->
- <script src="javascripts/socket.io.js"></script>
- <script>
+
+</div>
+</div><!--/site-wrapper-->
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<!-- socket.io -->
+<script src="javascripts/socket.io.js"></script>
+<script>
   var socket = io();
 </script>
 </body>

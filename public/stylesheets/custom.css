@@ -149,6 +149,11 @@ body {
   padding-top: 10px;
 }
 
+.reach-me {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .reach-me > h5 {
   margin-top: 16px;
 }
