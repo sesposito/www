@@ -6,7 +6,7 @@ html,
 body {
   height: 100%;
   background-color: #002934;
-  color: #E0EBEB;
+  color: white;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -23,8 +23,10 @@ body {
 
 .info-box > .title {
   text-align: left;
-  padding-left: 20px;
-  border-bottom: medium solid white;
+  padding-left: 0;
+  border-bottom: solid white;
+  border-width: 2px;
+  color: white;
 }
 
 .info-box > .content {
@@ -35,11 +37,25 @@ body {
 
 .cover-img {
   width: 150px;
-  border: medium solid white;
+  /*border: medium solid white;*/
 }
 
 .short-bio {
   text-align: left;
+  font-size: 20px;
+}
+
+.reach-me {
+  color: white; 
+  font-size: 20px;
+  padding-top: 20px;
+  /*text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;*/
+}
+
+.reach-me > a {
+  color: white; 
   font-size: 20px;
 }
 
