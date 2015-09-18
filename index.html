@@ -68,7 +68,7 @@
                   <a href="https://twitter.com/s_m_n"><p>or <i class="fa fa-twitter-square"></i> me @s_m_n</p></a>
                 </div> -->
                 <div class="reach-me text-center">
-                  <a href="mailto:esposito.simon@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+                  <a href="#" onclick="mailTo()"><i class="fa fa-envelope-square fa-2x"></i></a>
                   <a href="https://pt.linkedin.com/in/espositosimon"><i class="fa fa-linkedin-square fa-2x"></i></a>
                   <a href="https://twitter.com/s_m_n"><i class="fa fa-twitter-square fa-2x"></i></a>
                   <a href="https://github.com/sesposito"><i class="fa fa-github-square fa-2x"></i></a>
@@ -152,6 +152,13 @@
       </div>
 
     </div>
+
+    <script type="text/javascript">
+      function mailTo(){
+        var href = "mailto:" + "esposito." + "simon" + "@gmail.com"
+        document.location.href = href
+      }
+    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
