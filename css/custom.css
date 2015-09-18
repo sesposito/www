@@ -48,15 +48,24 @@ body {
 .reach-me {
   color: white; 
   font-size: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
   /*text-align: left;
   padding-top: 10px;
   padding-left: 20px;*/
 }
 
 .reach-me > a {
-  color: white; 
-  font-size: 20px;
+  color: white;
+  padding: 0 7px 0 7px;
+}
+
+.exp-txt {
+  font-size: 16px;
+  padding: 10px 0 10px 0;
+}
+
+.exp-txt > ul > li > ul > li {
+  padding: 3px 0 3px 0;
 }
 
 
