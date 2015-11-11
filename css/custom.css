@@ -1,0 +1,142 @@
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  /*background-color: #002934;*/
+  /*background-color: #333;*/
+  background-image: url("../img/debut_dark.png");
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,1);
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.site-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.info-box {
+  witdh: auto;
+}
+
+h2 {
+  margin-top: 15px;
+  color: #E1E1E1;
+}
+
+.info-box > .title {
+  text-align: left;
+  padding-left: 0;
+  border-bottom: solid #E1E1E1;
+  border-width: 2px;
+  color: white;
+}
+
+.info-box > .title > h2 {
+  margin-bottom: 3px;
+}
+
+.info-box > .content {
+  padding: 20px 0 10px 0;
+  width: auto;
+  vertical-align: middle;
+}
+
+.cover-img {
+  width: 150px;
+}
+
+.short-bio {
+  text-align: left;
+  font-size: 20px;
+}
+
+.reach-me > .row{
+  color: white; 
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+.reach-me > .row {
+  color: white;
+  padding-top: 10px;
+}
+
+.reach-me > .row > a {
+  color: white;
+  padding: 0 5px 0 5px;
+}
+
+.exp-txt {
+  font-size: 16px;
+}
+
+.exp-txt > ul > li > ul > li {
+  padding: 3px 0 3px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px 0 5px 20px;
+  margin-bottom: 0;
+}
+
+/* Mobile Rules */
+
+@media (max-width: 1100px) {
+
+  .short-bio {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .cover-img {
+    width: 130px;
+  }
+
+  .content > .row. > .col-sm-8 {
+    padding-left: 0;
+  }
+
+  .content > .row. > .col-sm-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 851px) {
+
+  .short-bio {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .cover-img {
+    width: 130px;
+  }
+
+  .content > .row. > .col-sm-8 {
+    padding-left: 0;
+  }
+
+  .content > .row. > .col-sm-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
