@@ -1,20 +1,25 @@
 /*
+ * Imports
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+/*
  * Base structure
  */
 
 html,
 body {
+  font-family: 'Raleway', sans-serif;
+  font-variant: normal;
   height: 100%;
-  /*background-color: #002934;*/
-  /*background-color: #333;*/
-  background-image: url("../img/debut_dark.png");
-  color: white;
+  color: black;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,1);
-  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .site-wrapper {
+  max-width: 1000px;
+  padding: 20px;
   width: 70%;
   margin: 0 auto;
 }
@@ -25,15 +30,15 @@ body {
 
 h2 {
   margin-top: 15px;
-  color: #E1E1E1;
+  color: black;
 }
 
 .info-box > .title {
   text-align: left;
   padding-left: 0;
-  border-bottom: solid #E1E1E1;
+  border-bottom: solid black;
   border-width: 2px;
-  color: white;
+  color: black;
 }
 
 .info-box > .title > h2 {
@@ -55,19 +60,28 @@ h2 {
   font-size: 20px;
 }
 
-.reach-me > .row{
-  color: white; 
+.reach-me > .row > a > {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.reach-me {
+  padding-top: 40px;
+}
+
+.reach-me > .row {
+  color: black; 
   font-size: 20px;
   padding-top: 30px;
 }
 
 .reach-me > .row {
-  color: white;
+  color: black;
   padding-top: 10px;
 }
 
 .reach-me > .row > a {
-  color: white;
+  color: black;
   padding: 0 5px 0 5px;
 }
 
@@ -114,29 +128,8 @@ ul {
 
 }
 
-@media (max-width: 851px) {
-
-  .short-bio {
-    text-align: left;
-    font-size: 18px;
+@media (max-width: 767px) {
+  .reach-me {
+    padding-top: 10px;
   }
-
-  .cover-img {
-    width: 130px;
-  }
-
-  .content > .row. > .col-sm-8 {
-    padding-left: 0;
-  }
-
-  .content > .row. > .col-sm-4 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .site-wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
-
 }
