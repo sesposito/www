@@ -132,4 +132,27 @@ ul {
   .reach-me {
     padding-top: 10px;
   }
+
+  .site-wrapper {
+    max-width: 1000px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
 }
+
+@media (max-width: 500px) {
+  .reach-me {
+    padding-top: 10px;
+  }
+
+  .site-wrapper {
+    max-width: 1000px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
+
