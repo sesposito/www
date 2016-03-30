@@ -85,6 +85,10 @@ h2 {
   padding: 0 5px 0 5px;
 }
 
+.reach-me > .row > a:hover {
+  color: #23527c;
+}
+
 .exp-txt {
   font-size: 16px;
 }
