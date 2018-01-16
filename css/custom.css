@@ -17,6 +17,14 @@ body {
   text-align: center;
 }
 
+p.thicker {
+  font-weight: bolder;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
 .site-wrapper {
   max-width: 1000px;
   padding: 20px;
@@ -70,7 +78,7 @@ h2 {
 }
 
 .reach-me > .row {
-  color: black; 
+  color: black;
   font-size: 20px;
   padding-top: 30px;
 }
